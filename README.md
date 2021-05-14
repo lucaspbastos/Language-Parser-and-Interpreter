@@ -4,15 +4,15 @@ This project is the culmination of building a language lexical analyzer, parser,
 
 ## Language
 
-Prog := Sl
-Sl := SC { Sl } | Stmt SC { Sl }
-Stmt := PrintStmt | PrintlnStmt | RepeatStmt | Expr PrintStmt := PRINT Expr
-PrintlnStmt := PRINTLN Expr
-RepeatStmt:= Repeat Expr BEGIN Stmt END
-Expr := Sum { EQ Sum }
-Sum := Prod { (PLUS | MINUS) Prod }
-Prod := Primary { (STAR | SLASH) Primary }
-Primary := IDENT | ICONST | SCONST | LPAREN Expr RPAREN
+Prog := Sl  
+Sl := SC { Sl } | Stmt SC { Sl }  
+Stmt := PrintStmt | PrintlnStmt | RepeatStmt | Expr PrintStmt := PRINT Expr  
+PrintlnStmt := PRINTLN Expr  
+RepeatStmt:= Repeat Expr BEGIN Stmt END  
+Expr := Sum { EQ Sum }  
+Sum := Prod { (PLUS | MINUS) Prod }  
+Prod := Primary { (STAR | SLASH) Primary }  
+Primary := IDENT | ICONST | SCONST | LPAREN Expr RPAREN  
 
 Rules:
 1. The language has identifiers, which are defined to be a letter followed by zero or more
