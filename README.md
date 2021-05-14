@@ -2,7 +2,8 @@
 
 This project is the culmination of building a language lexical analyzer, parser, and interpreter for Spring 2020 CS 280 which was taught by the late Professor Gerard Ryan. This is for archival purposes and will not be useful for any students currently taking CS 280.
 
-##Language
+## Language
+
 Prog := Sl
 Sl := SC { Sl } | Stmt SC { Sl }
 Stmt := PrintStmt | PrintlnStmt | RepeatStmt | Expr PrintStmt := PRINT Expr
@@ -32,7 +33,7 @@ delimit tokens.
 10. An error will be denoted by the ERR token.
 11. End of file will be denoted by the DONE token.
 
-##Programs
+## Programs
 **Programming Assignment 2 - Lexical Analyzer**: analyzer.cpp
 Parameters:
 - -v (optional) if present, every token is printed when it is seen
