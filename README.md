@@ -34,7 +34,7 @@ delimit tokens.
 11. End of file will be denoted by the DONE token.
 
 ## Programs
-**Programming Assignment 2 - Lexical Analyzer**: analyzer.cpp
+**Programming Assignment 2 - Lexical Analyzer**: analyzer.cpp  
 Parameters:
 - -v (optional) if present, every token is printed when it is seen
 - -iconsts (optional) if present, print out all the unique integer constants in
@@ -45,7 +45,7 @@ numeric order
 
 **Programming Assignment 3 - Recursive Descent Parser**: descentParser.cpp
 
-**Programming Assignment 4 - Interpreter**: interpreter.cpp
+**Programming Assignment 4 - Interpreter**: interpreter.cpp  
 Rules:
 1. The language contains two types: integer and string.
 2. The PLUS MINUS STAR and SLASH operators are left associative.
